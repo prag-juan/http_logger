@@ -89,9 +89,7 @@ end
 
 
 if defined?(Rails)
-  Rails.configuration.after_initialize do
-    Net::HTTP.logger = Rails.logger
-  end
+  Net::HTTP.logger = Rails.logger
 end
 
 
